@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
-title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title                    : "thejunglejane"
+title_separator          : " "
+name                     : "Jane Stewart Adams"
+description              : "Doing data things to the data."
+url                      : http://localhost:4000
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -35,7 +35,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : thejunglejane
 facebook:
   username               :
   app_id                 :
@@ -50,9 +50,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : UA-23556547-3
 
 # Google AdSense
 google_ad_client         :
@@ -61,11 +61,11 @@ google_ad_slot           :
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "J S Adams"
   avatar           : "bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Doing data things to the data."
+  location         : "Brooklyn"
+  email            : jane@thejunglejane.com
   uri              :
   bitbucket        :
   codepen          :
@@ -73,18 +73,18 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : thejunglejane
   google_plus      :
   keybase          :
-  instagram        :
+  instagram        : thejunglejane
   lastfm           :
-  linkedin         :
+  linkedin         : thejunglejane
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          :
+  twitter          : thejunglejane
   vine             :
   weibo            :
   xing             :
