@@ -11,7 +11,7 @@ title                    : "thejunglejane"
 title_separator          : " "
 name                     : "Jane Stewart Adams"
 description              : "Doing data things to the data."
-url                      : http://localhost:4000
+url                      : http://thejunglejane.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
