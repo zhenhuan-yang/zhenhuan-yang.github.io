@@ -1,8 +1,8 @@
 ---
-title: "Duke Riley's Fly by Night"
-layout: splash
+title: "Fly by Night"
+layout: single
 modified:
-categories: writing 
+categories: other 
 excerpt:
 tags: [pigeons, art, fly by night, duke riley, photography]
 share: false
@@ -44,5 +44,7 @@ gallery:
     image_path: fly_by_night/DSCF4562.JPG
 ---
 
-{% include gallery caption="Photos from Duke Riley's [Fly by Night](http://creativetime.org/projects/flybynight/) at the Brooklyn Navy Yard." %}
+Photos from Duke Riley's [Fly by Night](http://creativetime.org/projects/flybynight/) at the Brooklyn Navy Yard.
+
+{% include gallery %}
 
