@@ -2,7 +2,7 @@
 layout: single
 title: "Keeping Your Head With More Data"
 modified:
-categories: writing
+categories: other
 excerpt:
 tags: [data, talks, child welfare, criminal justice]
 share: false
