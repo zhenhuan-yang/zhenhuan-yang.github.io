@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "thejunglejane"
 title_separator          : " "
 name                     : "Jane Stewart Adams"
-description              : "Doing data things to the data."
+description              : "Small, slow, decolonized data."
 url                      : http://thejunglejane.com
 baseurl                  : # the subpath of your site, e.g. "/blog"
 gh_repo                  :
@@ -62,7 +62,7 @@ google_ad_slot           :
 # Site Author
 author:
   name             : "J S Adams"
-  avatar           : "bio-photo.jpg"
+  avatar           : "bio-photo2.jpg"
   bio              : "Doing data things to the data."
   location         : "Brooklyn"
   email            : jane@thejunglejane.com
