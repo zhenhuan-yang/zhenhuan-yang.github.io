@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: arxive
 title: About Me
 author_profile: true
 ---
