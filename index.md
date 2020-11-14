@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: About Me
 author_profile: true
 ---
