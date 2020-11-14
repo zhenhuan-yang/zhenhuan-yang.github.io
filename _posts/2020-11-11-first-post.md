@@ -7,4 +7,4 @@ author_profile: true
 
 Hi
 
-\[E = mc^2\]
+$$E = mc^2$$
