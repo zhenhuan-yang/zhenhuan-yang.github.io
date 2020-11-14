@@ -94,9 +94,9 @@ analytics:
 # Site Author
 author:
   name             : "Zhenhuan Yang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : PhD candidcate interested in machine learning"
-  location         : "Somewhere"
+  avatar           : "/assets/images/selfie.jpg"
+  bio              : "PhD candidcate interested in machine learning"
+  location         : "Albany, NY, USA"
   email            : zyang6@albany.edu
   links:
     - label: "Email"
