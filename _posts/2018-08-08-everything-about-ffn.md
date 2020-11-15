@@ -2,6 +2,7 @@
 layout: single
 title: "Everything about FFNs: Structure, Optimization and Beyond"
 author_profile: true
+comments: true
 ---
 
 ## Mathematical formulation
