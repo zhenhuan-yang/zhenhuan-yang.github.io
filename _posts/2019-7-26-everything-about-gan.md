@@ -2,6 +2,7 @@
 layout: single
 title: "Everything abut GANs: Model, Training and Beyond"
 author_profile: true
+comments: true
 ---
 
 ## The original definition
