@@ -21,7 +21,7 @@ After you build your badass website, you will want to publish and show off (isn'
 
 ### jemdoc + Mathjax
 
-As a math major, typing $\Latex$ equation becomes a necessity. The original jemdoc loads LATEX equations as PNG image that is pixelated! Then I found Mathjax, which is a JavaScript display engine for mathematics that works in all browsers!
+As a math major, typing $\LaTex$ equation becomes a necessity. The original jemdoc loads LATEX equations as PNG image that is pixelated! Then I found Mathjax, which is a JavaScript display engine for mathematics that works in all browsers!
 
 [Wonseok Shin](http://www.mit.edu/~wsshin/jemdoc+mathjax.html) made this possible. The usage is quite simple, just change your `mysite.conf` and do
 
