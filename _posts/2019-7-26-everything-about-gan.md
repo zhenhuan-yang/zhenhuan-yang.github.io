@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Everything about GANs: Model, Training and Beyond
+title: "Everything abut GANs: Model, Training and Beyond"
 author_profile: true
 ---
 
