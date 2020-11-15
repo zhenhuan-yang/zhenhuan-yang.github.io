@@ -219,7 +219,7 @@ All the files ends with `.md` besides `blog.html`. This is because blog awarenes
       {% if year != nyear %}
         <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
       {% endif %}
-
+			
     {% endunless %}
    {% include archive-single.html %}
   {% endfor %}
