@@ -192,23 +192,11 @@ main:
 
 Next, create a folder `_pages` together with page files according the `navigation.yml`. Specify `layout: archive` and specify the `permalink` in each page corresponding to `navigation.yml`.
 
-All the files ends with `.md` besides `blog.html`. This is because blog awareness, add the snippets inside
+All the files ends with `.md` besides `blog.html`. This is because blog awareness, add the snippets inside thanks to [Liquid](https://shopify.dev/docs/themes/liquid/reference/basics)
 
 ```javascript
 <ul>
-  {% for post in site.posts %}
-    {% unless post.next %}
-      <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
-      {% if year != nyear %}
-        <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
-      {% endif %}
-
-    {% endunless %}
-   {% include archive-single.html %}
-  {% endfor %}
+  ...
 </ul>
 ```
 
