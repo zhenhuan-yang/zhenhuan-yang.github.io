@@ -97,11 +97,11 @@ author:
   avatar           : "/assets/images/selfie.jpg"
   bio              : "PhD candidcate interested in machine learning"
   location         : "Albany, NY, USA"
-  email            : zyang6@albany.edu
+  email            : # zyang6@albany.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:zyang6@albany.edu"
+      url: "mailto:zyang6@albany.edu"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://www.albany.edu/~ZY572688/"
