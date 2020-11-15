@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: home
 title: About Me
 author_profile: true
 ---
