@@ -14,6 +14,4 @@ I am a PhD student in the [Department of Mathematics and Statistics](https://www
 
 * (Aug 2020) One paper is accepted by ICDM 2020
 
-## ClustrMaps
-
 <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=386&t=n&d=SDmmhatKNFc_Nfgc4DN9vMhZR3AqerZqTXMV-ftRQaU'></script>
