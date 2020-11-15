@@ -194,7 +194,7 @@ Next, create a folder `_pages` together with page files according the `navigatio
 
 All the files ends with `.md` besides `blog.html`. This is because blog awareness, add the snippets inside
 
-```
+```javascript
 <ul>
   {% for post in site.posts %}
     {% unless post.next %}
