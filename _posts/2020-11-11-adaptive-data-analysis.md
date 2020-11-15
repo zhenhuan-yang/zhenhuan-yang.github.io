@@ -2,6 +2,7 @@
 layout: single
 title: "Adaptive data analysis and transfer theorem"
 author-profile: true
+comments: true
 ---
 
 Many data analysis pipelines are adaptive: the choice of which analysis to run next depends on the outcome of previous analyses. For example, hyper-parameter optimization in large-scale machine learning problems. In this case, common practice involves repeatedly evaluating a series of models on the same dataset.
