@@ -96,6 +96,8 @@ Alternatively, I use [Atom](https://atom.io/) instead of terminal directly. Atom
 
 To make the website looks like yours, start with editing `_config.yml` to the site author with your information.
 
+To add your avator, create a folder named `images` in `assets` folder. Put your avator picture inside. 
+
 To edit the links, find your font awesome icons [here](https://www.w3schools.com/icons/default.asp). I did not find the brand icon for Google Scholar so I used `fas fa-fw fa-graduation-cap`.
 
 You also want to edit the site settings. If you intend to write blog and enable comments. Follow the instruction for how to use [disqus](https://disqus.com/).
