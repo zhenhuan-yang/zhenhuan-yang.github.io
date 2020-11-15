@@ -216,8 +216,6 @@ What if you want to create two different blog-like pages? Not sure yet, might ha
 
 ### Creating posts
 
-Finally, you can write your blog!
-
 Firstly, create a folder named `_posts` and then put all your posts in here.
 
 To name your post, use `yyyy-mm-dd-title.md` as the post name. It will tell jekyll the date and title. Set your layout as `layout: single` and enable `comments: true` if you added comment provider in your `_config.yml`.
