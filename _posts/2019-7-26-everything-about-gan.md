@@ -89,7 +89,7 @@ Minimizing the KL divergence between $\hat{p}_ {data}$ and $p_{model}$ is exactl
 
 In explicit density models,  is explicit, among which we have variational autoencoder (VAE). GANs fall in the category of implicit density models, where is implicit. 
 
-![image](KL.png)
+![image](/assets/images/KL.png)
 
 Unlike maximum likelihood, reverse KL tends to learn the mode. Here we show an example of a distribution over one-dimensional data $x$. In this example, we use a mixture of two Gaussians as the data distribution, and a single  Gaussian as the model family. Because a single Gaussian can not capture the true data distribution, the choice of divergence determines the tradeoff that the model makes.
 
@@ -103,7 +103,7 @@ $$\min_B\max_A V(A,B) = xy$$
 
 The Nash equilibrium is $x=y=0$. We update the parameter $x$ and $y$ based on the gradient of the value function $V$.
 
-![image](xy.png)
+![image](/assets/images/xy.png)
 
 Our example is an excellent showcase that some cost functions will not converge with gradient descent, in particular for a non-convex game.
 
