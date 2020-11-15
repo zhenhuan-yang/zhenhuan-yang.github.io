@@ -154,26 +154,12 @@ defaults:
 
 The default homepage layout shows your recent posts, which is good if your website is just a blog. However, if you intend to display your website as a personal academic site like me, you will want the homepage to include basic information and disable the recent posts.
 
-I have not found a perfect way, so I go to `home.html` located in `/_layouts` and delete the snippet
+I have not found a perfect way, so I go to `home.html` located in `/_layouts` and delete the snippet after
 
 ```
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
-</div>
-
-{% include paginator.html %}
 ```
+
 
 Now go ahead to `index.html` and change the name to `index.md`, which enables you to write in markdown mode. If your website is hosted by Github Pages this is fine. Otherwise, you need to exports your `.md` file to `.html` file.
 
@@ -219,7 +205,7 @@ All the files ends with `.md` besides `blog.html`. This is because blog awarenes
       {% if year != nyear %}
         <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
       {% endif %}
-			
+
     {% endunless %}
    {% include archive-single.html %}
   {% endfor %}
