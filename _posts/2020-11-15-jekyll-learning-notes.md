@@ -135,3 +135,91 @@ defaults:
       related: true
       mathjax: true
 ```
+
+### Editing home layout
+
+The default homepage layout shows your recent posts, which is good if your website is just a blog. However, if you intend to display your website as a personal academic site like me, you will want the homepage to include basic information and disable the recent posts.
+
+I have not found a perfect way, so I go to `home.html` located in `/_layouts` and delete the snippet
+
+```
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
+</div>
+
+{% include paginator.html %}
+```
+
+Now go ahead to `index.html` and change the name to `index.md`, which enables you to write in markdown mode. If your website is hosted by Github Pages this is fine. Otherwise, you need to exports your `.md` file to `.html` file.
+
+### ClustrMaps
+
+[ClustrMaps](https://clustrmaps.com/) is a fancy widget that can track your website visitors from all over the world and visualize it using a real-time map. Follow the instruction from the official site to create your widget.
+
+Go to `home.html` located in `/_layouts` and paste your Javascript at the end. Now you will see the change.
+
+### Creating pages
+
+Pages are aside from homepage. For a academic site, I need at least Publication page and Blog page.
+
+Firstly, go to `navigation.yml` located in `/_data` to state your pages, mine looks like
+
+```
+# main links
+main:
+  # - title: "Quick-Start Guide"
+  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Publications"
+    url: /publications/
+  - title: "Projects"
+    url: /projects/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Blog"
+    url: /blog/
+```
+
+Next, create a folder `_pages` together with page files according the `navigation.yml`. Specify `layout: archive` and specify the `permalink` in each page corresponding to `navigation.yml`.
+
+All the files ends with `.md` besides `blog.html`. This is because blog awareness, add the snippets inside
+
+```
+<ul>
+  {% for post in site.posts %}
+    {% unless post.next %}
+      <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y %b' }}{% endcapture %}
+      {% capture nyear %}{{ post.next.date | date: '%Y %b' }}{% endcapture %}
+      {% if year != nyear %}
+        <font color="#778899"><h2>{{ post.date | date: '%Y %b' }}</h2></font>
+      {% endif %}
+
+    {% endunless %}
+   {% include archive-single.html %}
+  {% endfor %}
+</ul>
+```
+
+What if you want to create two different blog-like pages? Not sure yet, might have something to do with specifying the `category` in the post.
+
+### Creating posts
+
+Finally, you can write your blog!
+
+Firstly, create a folder named `_posts` and then put all your posts in here.
+
+To name your post, use `yyyy-mm-dd-title.md` as the post name. It will tell jekyll the date and title. Set your layout as `layout: single` and enable `comments: true` if you added comment provider in your `_config.yml`.
+
+Happy blogging!
