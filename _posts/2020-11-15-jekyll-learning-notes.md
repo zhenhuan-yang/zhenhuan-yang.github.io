@@ -21,7 +21,7 @@ After you build your badass website, you will want to publish and show off (isn'
 
 ### jemdoc + Mathjax
 
-As a math major, typing Latex equation becomes a necessity. The original jemdoc loads LATEX equations as PNG image that is pixelated! Then I found Mathjax, which is a JavaScript display engine for mathematics that works in all browsers!
+As a math major, typing $\Latex$ equation becomes a necessity. The original jemdoc loads LATEX equations as PNG image that is pixelated! Then I found Mathjax, which is a JavaScript display engine for mathematics that works in all browsers!
 
 [Wonseok Shin](http://www.mit.edu/~wsshin/jemdoc+mathjax.html) made this possible. The usage is quite simple, just change your `mysite.conf` and do
 
@@ -96,7 +96,7 @@ Alternatively, I use [Atom](https://atom.io/) instead of terminal directly. Atom
 
 To make the website looks like yours, start with editing `_config.yml` to the site author with your information.
 
-To add your avator, create a folder named `images` in `assets` folder. Put your avator picture inside. 
+To add your avator, create a folder named `images` in `assets` folder. Put your avator picture inside.
 
 To edit the links, find your font awesome icons [here](https://www.w3schools.com/icons/default.asp). I did not find the brand icon for Google Scholar so I used `fas fa-fw fa-graduation-cap`.
 
@@ -113,9 +113,21 @@ Go to `custom.html` located in `/_includes/head`. Follow the instruction to add 
 Go to `scripts.html` located in `/_includes`. Add this snippet at the end
 
 ```
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" defer
-        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+<script type="text/javascript" async
+	src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+     extensions: ["tex2jax.js"],
+     jax: ["input/TeX", "output/HTML-CSS"],
+     tex2jax: {
+       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+       processEscapes: true
+     },
+     "HTML-CSS": { availableFonts: ["TeX"] }
+   });
 </script>
 ```
 
