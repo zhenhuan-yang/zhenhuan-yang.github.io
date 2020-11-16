@@ -211,3 +211,15 @@ Firstly, create a folder named `_posts` and then put all your posts in here.
 To name your post, use `yyyy-mm-dd-title.md` as the post name. It will tell jekyll the date and title. Set your layout as `layout: single` and enable `comments: true` if you added comment provider in your `_config.yml`.
 
 Happy blogging!
+
+### Deployment
+
+To upload a Jekyll site to a web host using FTP, run the command
+
+```
+bundle exec jekyll build
+```
+
+and copy the contents of the generated `_site` folder to the root folder of your hosting account.
+
+If you are using Github Pages, this is no need, and if you do so you do not have to commit or push since `_site` is in `.gitignore`.
