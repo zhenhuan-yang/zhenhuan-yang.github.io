@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Hello world!"
+title: "Hello world"
 author_profile: true
 comments: true
 ---
