@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Adaptive data analysis and transfer theorem"
+tags: differential-privacy generalization statistics
 author-profile: true
 comments: true
 ---

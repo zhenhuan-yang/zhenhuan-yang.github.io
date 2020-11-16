@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Everything about FFNs: Structure, Optimization and Beyond"
+tag: deep-learning
 author_profile: true
 comments: true
 ---
@@ -19,7 +20,7 @@ For simplicity of presentation, we skip the bias term $b^l$ in the expression of
 
 $$Z^l(m,n) = (Z^{l-1} * W^{l}) (m,n) = \sum_{i=1}^F\sum_{j=1}^F\sum_{k=1}^C W^l(i,j,k) Z^{l-1}(m+i-1,n+j-1,k).$$
 
-Please be noted this definition is different from mathmetical definition of convolusion of two funcitons, where the place of $+$ and $-$ should be switched. If there is an application of $K$ filters, it will result in an output of size $O \times O \times K$. If there is a stride $S$, then the convulution index on the input becomes $Z^{l-1}(m +(m-1)s+i-1, n+(n-1)s+j-1,k)$. 
+Please be noted this definition is different from mathmetical definition of convolusion of two funcitons, where the place of $+$ and $-$ should be switched. If there is an application of $K$ filters, it will result in an output of size $O \times O \times K$. If there is a stride $S$, then the convulution index on the input becomes $Z^{l-1}(m +(m-1)s+i-1, n+(n-1)s+j-1,k)$.
 
 The pooling layer (POOL) is a downsampling operation, typically applied after a convolution layer, which does some spatial invariance. The operation is similar to convolution, but instead of weighted sum, it is replaced with maximum or average.
 
@@ -57,7 +58,7 @@ $$e^{L-1} = (D^{L-1}W^L)^\top e^L,$$
 $$\cdots$$
 $$e^1 = (D^1W^2)^\top e^2.$$
 
-Then the partial gradient can be written as 
+Then the partial gradient can be written as
 
 $$\frac{\partial F(\theta)}{\partial W^l} = -e^l(z^{l-1})^\top, l = 1,\cdots, L.$$
 
@@ -83,7 +84,7 @@ If all $w^l = 2$, then thegradient has norm $2^{L-1}e$ which is exponentially la
 
 ### ReLu Activation
 
-The use of sigmoid type of activation functions, such as logistic sigmoid function $\phi(x) = \frac{1}{1+\exp(x)}$, suffers from gradient vanishing problem. Recall the backpropagated error $e^l = (D^{l-1}W^l)^\top e^l$, since $\phi'(x) \in (0,1)$, hence the gradient is always shrinking (especially when the input value is large) when backpropagating to the earlier layers. 
+The use of sigmoid type of activation functions, such as logistic sigmoid function $\phi(x) = \frac{1}{1+\exp(x)}$, suffers from gradient vanishing problem. Recall the backpropagated error $e^l = (D^{l-1}W^l)^\top e^l$, since $\phi'(x) \in (0,1)$, hence the gradient is always shrinking (especially when the input value is large) when backpropagating to the earlier layers.
 
 The introduction of rectified linear unit function (ReLu), $\phi(x) = \max(0,x)$, can mitigate this issue, as the gradient is $1$ when $x > 0$, hence the speed of convergence is much faster than sigmoid activation. ReLu can also easily obtain sparse representations.
 
@@ -95,7 +96,7 @@ The introduction of rectified linear unit function (ReLu), $\phi(x) = \max(0,x)$
 
 Batch normalization (BatchNorm) is another way to avoid gradient vanishing (or to avoid internal covatiate shift). Recall in linear regression problem $\min_w \sum_{i=1}^n(y_i - w^\top x_i)^2$, we often scale each row of data matrix $[x_1, \cdots, x_n] \in \mathbb{R}^{d \times n}$ so that each row has zero mean and unit norm (one row corresponds to one feature). This operation can be viewed as a pre-conditioning technique that can reduce the condition number of the Hessian matrix.
 
-Consider the matrix of pre-activations $[h^l(1), \cdots, h^l(n)]$, where $h^l(i)$ represents the pre-activation at the $l$-th layer for the $i$-th sample. Thus it is natural to hope each row of $[h^l(1), \cdots, h^l(n)]$ has zero mean and unit variance. However, normalizing the whole dataset is computationally hard, hence by normalizing each batch and treating it as one of the layer can save time and successfully apply chain rule. Formally, for any $x \in B$, the operator is defined as 
+Consider the matrix of pre-activations $[h^l(1), \cdots, h^l(n)]$, where $h^l(i)$ represents the pre-activation at the $l$-th layer for the $i$-th sample. Thus it is natural to hope each row of $[h^l(1), \cdots, h^l(n)]$ has zero mean and unit variance. However, normalizing the whole dataset is computationally hard, hence by normalizing each batch and treating it as one of the layer can save time and successfully apply chain rule. Formally, for any $x \in B$, the operator is defined as
 
 $$BN(x) = \gamma \frac{x - \mu_B}{\sigma_B} +\beta$$
 

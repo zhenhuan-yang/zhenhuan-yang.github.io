@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Everything abut GANs: Model, Training and Beyond"
+tag: deep-learning
 author_profile: true
 comments: true
 ---
@@ -11,7 +12,7 @@ The framework of generative adversarial networks is firstly introduced in [Gener
 
 $$\min_G\max_D J(G,D) = \mathbb{E}_{x \sim p_{data}(x)}[\log(D(x))] + \mathbb{E}_{z\sim p(z)}[\log(1 - D(G(z)))]$$
 
-One insight of this loss is from the view point of cross-entropy. The cross entropy between two distributions, $p$ and $q$ is defined as 
+One insight of this loss is from the view point of cross-entropy. The cross entropy between two distributions, $p$ and $q$ is defined as
 
 $$H(p,q) = - \sum_{i} p_i \log(q_i)$$
 
@@ -19,7 +20,7 @@ where $p$ and $q$ denote the true and estimated distribution, respectively. For 
 
 $$H((x,y),D) = -y\log(D(x)) - (1 - y)\log(1-D(x)).$$
 
-In the case of GANs, $x_i$ coming from two sources, either $x_i\sim p_{data}$ or $x_i = G(z_i)$ where $z_i \sim p_z$. In addition, we also want the discriminator can not tell where $x_i$ coming from, hence we replace $y_i = \frac{1}{2}$. 
+In the case of GANs, $x_i$ coming from two sources, either $x_i\sim p_{data}$ or $x_i = G(z_i)$ where $z_i \sim p_z$. In addition, we also want the discriminator can not tell where $x_i$ coming from, hence we replace $y_i = \frac{1}{2}$.
 
 So far we have specified the cost function $J^{(D)}$ for only the discriminator. A complete specification of the game requires that we specify a cost function also for the generator. The simplest version of the game is a zero-sum game
 
@@ -60,35 +61,35 @@ By the strong law of large number,
 
 $$\frac{1}{n}\sum_{i=1}^n -\log p_{model}(x_i|\theta) \rightarrow \mathbb{E}_ {p_{data}}[-\log p_{model}(x|\theta)]$$
 
-Hence we can think of maximum likelihood as trying to minimize 
+Hence we can think of maximum likelihood as trying to minimize
 
-$$\mathbb{E}_ {p_{data}}[-\log p_{model}(x|\theta)]$$ 
+$$\mathbb{E}_ {p_{data}}[-\log p_{model}(x|\theta)]$$
 
-Here 
+Here
 
 $$p_{data} = p_{model}(x|\theta^* )$$
 
-i.e. data generate by true parameter. Furthermore, the minimization is equivalent to 
+i.e. data generate by true parameter. Furthermore, the minimization is equivalent to
 
 $$ \mathbb{E}[\log p_{model}(x|\theta^* )-\log p_{model}(x|\theta)] = \mathbb{E}[\log(\frac{p_{model}(x|\theta^* )}{p_{model}(x|\theta)})] = D_{KL}(p_{model}(x|\theta^* )|| p_{model}(x|\theta)) \geq 0.$$
 
-Also note that the last inequality becomes equality if and only if 
+Also note that the last inequality becomes equality if and only if
 
-$$p_{model}(x|\theta^* ) = p_{model}(x|\theta).$$ 
+$$p_{model}(x|\theta^* ) = p_{model}(x|\theta).$$
 
 This is because
 
 $$D_{KL}(p|| q) = \mathbb{E}_ p[\log(\frac{p}{q})] = - \mathbb{E}_ p[\log(\frac{q}{p})] \geq -\log\mathbb{E}_ p[\frac{q}{p}] = 0$$
 
-where the Jensen's inequality holds when $p= q$. In practice, we don't have access to 
+where the Jensen's inequality holds when $p= q$. In practice, we don't have access to
 
-$$p_{model}(x|\theta^* ) = p_{data}(x)$$ 
+$$p_{model}(x|\theta^* ) = p_{data}(x)$$
 
-but $\hat{p}_ {data}$. 
+but $\hat{p}_ {data}$.
 
 Minimizing the KL divergence between $\hat{p}_ {data}$ and $p_{model}$ is exactly equivalent to maximizing the log-likelihood of the training set.
 
-In explicit density models,  is explicit, among which we have variational autoencoder (VAE). GANs fall in the category of implicit density models, where is implicit. 
+In explicit density models,  is explicit, among which we have variational autoencoder (VAE). GANs fall in the category of implicit density models, where is implicit.
 
 ![image](/assets/images/KL.png)
 
@@ -96,7 +97,7 @@ Unlike maximum likelihood, reverse KL tends to learn the mode. Here we show an e
 
 ## GAN problem
 
-GAN is based on the zero-sum non-cooperative game. In short, if one wins the other loses. A zero-sum game is also called minimax. Your opponent wants to maximize its actions and your actions are to minimize them. In game theory, the GAN model converges when the discriminator and the generator reach a Nash equilibrium. 
+GAN is based on the zero-sum non-cooperative game. In short, if one wins the other loses. A zero-sum game is also called minimax. Your opponent wants to maximize its actions and your actions are to minimize them. In game theory, the GAN model converges when the discriminator and the generator reach a Nash equilibrium.
 
 Since both sides want to undermine the others, a Nash equilibrium happens when one player will not change its action regardless of what the opponent may do. Consider two player $A$ and $B$ which control the value of $x$ and $y$ respectively. Player $A$ wants to maximize the value $xy$ while $B$ wants to minimize it.
 
@@ -135,17 +136,17 @@ There are many methods to approximate in GANs. Especially, we might like to be a
 
 $$J^{(G)} = \mathbb{E}_ {z\sim p_z}[-\exp(\sigma^{-1}(D(G(z))))]$$
 
-where $\sigma$ is the logistic sigmoid function, is equavalent to minimize 
+where $\sigma$ is the logistic sigmoid function, is equavalent to minimize
 
-$$D_{KL}(p_{data}||p_{gen}).$$ 
+$$D_{KL}(p_{data}||p_{gen}).$$
 
 The proof is as follow, we wish to find a function $f$ such that the expected gradient of
 
 $$J^{(G)} = \mathbb{E}_ {x\sim p_{gen}(x)}[f(x)]$$
 
-is equal to the expected gradient of 
+is equal to the expected gradient of
 
-$$D_{KL}(p_{data}||p_{gen}).$$ 
+$$D_{KL}(p_{data}||p_{gen}).$$
 
 First we take the derivative of the KL divergence with respect to a parameter $\theta$
 

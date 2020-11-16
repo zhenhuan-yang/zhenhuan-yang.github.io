@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "Jekyll Learning Notes"
+tags: coding
 author-profile: true
 comments: true
 ---
