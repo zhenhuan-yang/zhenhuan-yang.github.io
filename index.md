@@ -16,5 +16,3 @@ I am a PhD student in the [Department of Mathematics and Statistics](https://www
 * (Oct 2020) Invited to serve as a reviewer for AISTATS 2021
 
 * (Aug 2020) One paper is accepted by ICDM 2020
-
-google-site-verification: google656ec9aa75dc9ca3.html
