@@ -64,4 +64,4 @@ $$
 \mathbb{P} _{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(\mathcal{P}^n) - q_j(\mathcal{Q} _\pi)| \geq \epsilon] \leq \delta
 $$
 
-## Transfer
+## Transfer theorem
