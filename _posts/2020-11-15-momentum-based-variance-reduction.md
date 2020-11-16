@@ -6,7 +6,9 @@ author-profile: true
 comments: true
 ---
 
-[Ashok Cutkosky and Francesco Orabona](https://arxiv.org/abs/1905.10018) developed a variance reduction algorithm can do not require $n$-related batch size. But depends on adaptive learning rate.
+## Explanation of the idea
+
+[Ashok Cutkosky and Francesco Orabona](https://arxiv.org/abs/1905.10018) developed a variance reduction algorithm, STORM, that do not require $n$-related batch size. But depends on adaptive learning rate.
 
 The proposed update
 
@@ -49,3 +51,24 @@ We can control $a(\nabla f(x_t,\xi_t) - \nabla F(x_t))$ simply by choosing small
 And from smoothness we expect $\nabla f(x_t,\xi_t) - \nabla f(x_{t-1},\xi_t) - (\nabla F(x_t) - \nabla F(x_{t-1}))$ to be of the order of $\mathcal{O}(\|x_t - x_{t-1}\|) = \mathcal{O}(\eta d_{t-1})$.
 
 Therefore, by choosing small enough $\eta$ and $a$, we obtain $\|\epsilon_t\| = (1-a)\|\epsilon_{t-1}\| + Z$ where $Z$ is some small value. Thus, intuitively $\|\epsilon_t\|$ will decrease until it reaches $Z/a$.
+
+## Limitations
+
+The convergence analysis essentially depends on the smoothness assumption, this is, however, NOT satisfied by a large family of loss function.
+
+The key usage of $L$-smoothness comes from:
+
+* Error analysis as above
+* Quadratic upper bound
+
+Can we get rid of this assumption? By approximate contraction?
+
+Second of all, I wouldn't say this is a limitation, but, the idea of adding $\nabla f(x_t, \xi_t) - \nabla f(x_{t-1}, \xi_t)$ is exactly like the stochastic gradient estimator in [SARAH](https://arxiv.org/abs/1703.00102). The relationship between these two is unclear. Interestingly, this is discussed by [another paper](https://arxiv.org/abs/1905.05920). They proposed an algorithm named Hybrid Stochastic Gradient Descent. The gradient estimator is given by
+
+$$
+d_t = (1-a)d_{t-1} + a\nabla f(x_t, \zeta_t) + (1 - a)(\nabla f(x_t, \xi_t) - \nabla f(x_{t-1}, \xi_t)).
+$$
+
+The only difference compared to STORM is the need of additional stochastic gradient $\nabla f(x_t, \zeta_t)$.
+
+The analysis and choice of step-size are also different.
