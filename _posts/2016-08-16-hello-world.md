@@ -6,10 +6,12 @@ author_profile: true
 comments: true
 ---
 
-First post.
+* First post.
 
-MathJax is supported
+* MathJax is supported
 
 $$
 e^{i\pi} + 1 = 0.
 $$
+
+* Tags are sorted.
