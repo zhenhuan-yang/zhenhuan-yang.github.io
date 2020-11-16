@@ -5,7 +5,7 @@ author-profile: true
 comments: true
 ---
 
-## Introduction
+## Adaptive data analysis
 
 Many data analysis pipelines are adaptive: the choice of which analysis to run next depends on the outcome of previous analyses. For example, hyper-parameter optimization in large-scale machine learning problems. In this case, common practice involves repeatedly evaluating a series of models on the same dataset.
 
@@ -63,3 +63,5 @@ An interaction $I(M,\mathcal{A};S)$ is called $(\epsilon, \delta)$-posterior sen
 $$
 \mathbb{P} _{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(\mathcal{P}^n) - q_j(\mathcal{Q} _\pi)| \geq \epsilon] \leq \delta
 $$
+
+## Transfer
