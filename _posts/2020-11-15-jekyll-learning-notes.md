@@ -193,15 +193,16 @@ main:
 
 Next, create a folder `_pages` together with page files according the `navigation.yml`. Specify `layout: archive` and specify the `permalink` in each page corresponding to `navigation.yml`.
 
-All the files ends with `.md` besides `blog.html`. This is because blog awareness, add the snippets inside thanks to [Liquid](https://shopify.dev/docs/themes/liquid/reference/basics)
+
+### Using paginate
+
+Since we have created `/blog/` url. So create a folder also named `blog`. Put `index.html` in this folder and paste the code original from `home.html` layout to here.
+
+In the `_config.yml`, specify the output
 
 ```javascript
-<ul>
-  ...
-</ul>
+paginate_path: /blog/page:num
 ```
-
-What if you want to create two different blog-like pages? Not sure yet, might have something to do with specifying the `category` in the post.
 
 ### Creating posts
 
