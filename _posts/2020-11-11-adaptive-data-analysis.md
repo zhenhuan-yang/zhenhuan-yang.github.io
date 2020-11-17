@@ -26,6 +26,7 @@ When an analyst interacts with a statistical estimator, they generate a transcri
 
 The interaction is summarized in Algorithm 1, and we write $Interact(M; \mathcal{A} ; S)$ or $I(S)$ to refer to it.
 
+
 ```
 input M, A and S
 for t = 1 to T do
@@ -35,25 +36,29 @@ endfor
 return \Pi = ((q_1, a_1), ... ,(q_T, a_T))
 ```
 
-Given a transcript $\pi$ write $\mathcal{Q}_ \pi$ to denote the posterior distribution on datasets conditional on $\Pi = \pi$: $\mathcal{Q} _\pi = \mathcal{P} ^n |I(S) =  \pi$.
+Given a transcript $\pi$ write $\mathcal{Q}_\pi$ to denote the posterior distribution on datasets conditional on i.e.
 
-Note that $\mathcal{Q} _\pi$ will no longer generally be a product distribution.
+$$\mathcal{Q}_\pi = \mathcal{P}^n |I(S) =  \pi.$$
+
+Note that $\mathcal{Q}_\pi$ will no longer generally be a product distribution.
 
 We will be interested in evaluating uniform accuracy bounds, which control the worst-case error over all queries:
 
 M satisfies $(\alpha, \beta)$-sample accuracy if for every data analyst $\mathcal{A}$ and every data distribution $\mathcal{P}$,
 
 $$
-\mathbb{P} _{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(S) - a_j| \geq \alpha] \leq \beta
+\mathbb{P}_{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(S) - a_j| \geq \alpha] \leq \beta
 $$
 
 M satisfies $(\alpha, \beta)$-distributional accuracy if for every data analyst $\mathcal{A}$ and every data distribution $\mathcal{P}$,
+
 
 $$
 \mathbb{P} _{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(\mathcal{P}^n) - a_j| \geq \alpha] \leq \beta
 $$
 
-An interaction $Interact(M;  ; )$ satises $(\epsilon, \delta)$-differential privacy if for all data analysts $\mathcal{A}$, pairs of neighboring datasets $S, S' \in \mathcal{X}^n$, and for all events $E \subseteq \Pi$:
+
+An interaction is $(\epsilon, \delta)$ -differential privacy if for all data analysts $\mathcal{A}$ , pairs of neighboring datasets $S$ and $S'$ and any output $E$
 
 $$
 \mathbb{P}[I(M,\mathcal{A};S) \in E] \leq e^\epsilon \mathbb{P}[I(M,\mathcal{A};S') \in E] + \delta
@@ -64,5 +69,7 @@ An interaction $I(M,\mathcal{A};S)$ is called $(\epsilon, \delta)$-posterior sen
 $$
 \mathbb{P} _{S\sim \mathcal{P}^n, \Pi \sim I(M,\mathcal{A};S)} [\max_j |q_j(\mathcal{P}^n) - q_j(\mathcal{Q} _\pi)| \geq \epsilon] \leq \delta
 $$
+
+
 
 ## Transfer theorem
