@@ -76,3 +76,9 @@ $$
 $$
 
 Question: does the same property holds for pairwise learning?
+
+## Extension to PL condition and QG condition
+
+Yet, in order to get meaningful stability bound, step size is chosen small. This means longer training is necessary when considering optimization error at the same time, for example [Bassily et al. 2020](https://arxiv.org/abs/2006.06914). This is the question asked by [Charles and Papailiopoulos, 2017](https://arxiv.org/abs/1710.08402).
+
+## Extension to 

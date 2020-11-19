@@ -223,3 +223,9 @@ bundle exec jekyll build
 and copy the contents of the generated `_site` folder to the root folder of your hosting account.
 
 If you are using Github Pages, this is no need, and if you do so you do not have to commit or push since `_site` is in `.gitignore`.
+
+## Check out academicpages
+
+Yet, I found this amazing [repository](https://github.com/academicpages/academicpages.github.io) after I built everything (yah!).
+
+Basically this template has everything you need, you just need to fill in your info. 
