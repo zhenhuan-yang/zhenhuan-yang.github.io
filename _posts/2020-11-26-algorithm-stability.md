@@ -8,7 +8,7 @@ comments: true
 
 ## The original idea
 
-Starting from [Hardt et al.](https://arxiv.org/abs/1509.01240), stability has become the main tool for analyzing the generalization error of SGD-type algorithms.
+Starting from [Hardt et al. 2015](https://arxiv.org/abs/1509.01240), stability has become the main tool for analyzing the generalization error of SGD-type algorithms.
 
 For $L$-Lipschitz continuous, convex and $\beta$-smooth loss function, two key observations
 
@@ -77,8 +77,18 @@ $$
 
 Question: does the same property holds for pairwise learning?
 
-## Extension to PL condition and QG condition
+## Extension under PL condition and QG condition
 
 Yet, in order to get meaningful stability bound, step size is chosen small. This means longer training is necessary when considering optimization error at the same time, for example [Bassily et al. 2020](https://arxiv.org/abs/2006.06914). This is the question asked by [Charles and Papailiopoulos, 2017](https://arxiv.org/abs/1710.08402).
 
-## Extension to 
+## Extension under weak convexity
+
+## Extension to non-smooth loss functions
+
+All the above analysis essentially depends on the smoothness assumption on the loss function. This is due to the need of controlling the expansiveness.
+
+While still relying on the Lipschitz continuous condition, [Bassily et al. 2020](https://arxiv.org/abs/2006.06914) removed the smoothness assumption. The key observation is
+
+* Look at the square instead, which naturally gives a non-expansive squared term, while 
+
+[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157)
