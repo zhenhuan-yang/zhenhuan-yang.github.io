@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Algorithmic stability of SGD"
-tags: sgd generalization statistics
+tags: sgd generalization probability
 author-profile: true
 comments: true
 ---
@@ -77,6 +77,8 @@ $$
 
 Question: does the same property holds for pairwise learning?
 
+[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157) looked at the square instead.
+
 ## Extension under PL condition and QG condition
 
 Yet, in order to get meaningful stability bound, step size is chosen small. This means longer training is necessary when considering optimization error at the same time, for example [Bassily et al. 2020](https://arxiv.org/abs/2006.06914). This is the question asked by [Charles and Papailiopoulos, 2017](https://arxiv.org/abs/1710.08402).
@@ -89,6 +91,14 @@ All the above analysis essentially depends on the smoothness assumption on the l
 
 While still relying on the Lipschitz continuous condition, [Bassily et al. 2020](https://arxiv.org/abs/2006.06914) removed the smoothness assumption. The key observation is
 
-* Look at the square instead, which naturally gives a non-expansive squared term, while 
+* Look at the square instead, by expanding the square, it gives a non-expansive squared term naturally, while the cross term and the other squared term converge over time.
 
-[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157)
+[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157) looked at the different condition, which is called
+Hölder continuity. We say $\partial f$ is $(\alpha, L)$-
+Hölder continuous if for all $w,v,z$
+
+$$
+\|\partial f(w;z) - \partial f(v;z)\|_2 \leq L\|w-v\|_2^\alpha.
+$$
+
+This condition interpolates between Lipschitz continuity $(\alpha = 0)$ and smoothness $(\alpha = 1)$.
