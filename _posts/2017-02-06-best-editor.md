@@ -6,7 +6,7 @@ author-profile: true
 comments: true
 ---
 
-*Atom*! Basically, I like following cool features
+*Atom*! Basically, I like the following cool features
 
 * Direct Git and Github support.
 
