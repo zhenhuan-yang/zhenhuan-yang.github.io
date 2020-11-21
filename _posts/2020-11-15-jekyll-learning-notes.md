@@ -228,4 +228,4 @@ If you are using Github Pages, this is no need, and if you do so you do not have
 
 Yet, I found this amazing [repository](https://github.com/academicpages/academicpages.github.io) after I built everything (yah!).
 
-Basically this template has everything you need, you just need to fill in your info. 
+Basically this template has everything you need, you just need to fill in your info.
