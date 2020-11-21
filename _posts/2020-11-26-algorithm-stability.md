@@ -77,7 +77,7 @@ $$
 
 Question: does the same property holds for pairwise learning?
 
-[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157) looked at the square instead.
+[Lei and Ying, 2020](https://arxiv.org/abs/2006.08157) looked at the square instead. 
 
 ## Extension under PL condition and QG condition
 
