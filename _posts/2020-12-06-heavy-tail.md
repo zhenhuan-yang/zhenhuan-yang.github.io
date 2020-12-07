@@ -39,3 +39,16 @@ To be continue...
 To be continue...
 
 ### Robust gradient descent lacks scalability
+
+The goal here is to robustly estimate the true mean $\nabla f(w) = \mathbb{E}_{z \sim \mathbb{P}} [\nabla F(w;z)]$ from sample $S$. A function $g(w;S,\delta)$ is a gradient estimator if for functions $\alpha$ and $\beta$, with probability at least $1 - \delta$, at any fixed $w \in \mathcal{W}$, the estimator satisfies the following inequality
+
+$$
+\|g(w;S,\delta) - \nabla f(w)\|_2 \leq \alpha(n,\delta)\|w - w_*\|_2+\beta(n,\delta).
+$$
+
+In heavy-tailed model / weak moment assumption (There are other works study $\epsilon$-contamination model but it is out of the scope of this post), a popular way to construct $g(w;S,\delta)$ is by median-of-means
+
+```
+for i = 1 ... b do
+mu[i] = 1/B[i] 
+```
