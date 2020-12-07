@@ -18,15 +18,17 @@ where $g$ is the sampled gradient, $C$ is the clipping threshold and $\tilde{g}$
 
 ## Stochastic Optimization via Robust Gradient Estimation
 
-### Empirical Risk Minimization lacks robustness
-
 In SO, the target is to solve
 
 $$
 \min_{w \in \mathcal{W}} f(w) = \mathbb{E}_ {z \sim \mathbb{P}}[F(w; z)] = \int_{\mathcal{Z}} F(w; z) \mathrm{d} \mathbb{P}(z).
 $$
 
-where $\mathcal{W}$ is a convex set and we only have access to a sample $S = \{z_1, \cdots, z_n\}$ drawn from the unknown $\mathbb{P}$. A classical approach to do so is via empirical risk minimization (ERM).
+where $\mathcal{W}$ is a convex set and we only have access to a sample $S = \{z_1, \cdots, z_n\}$ drawn from the unknown $\mathbb{P}$.
+
+### Empirical Risk Minimization lacks robustness
+
+A classical approach to do so is via empirical risk minimization (ERM).
 
 To be continue...
 
