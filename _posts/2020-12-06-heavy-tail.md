@@ -46,9 +46,16 @@ $$
 \|g(w;S,\delta) - \nabla f(w)\|_2 \leq \alpha(n,\delta)\|w - w_*\|_2+\beta(n,\delta).
 $$
 
-In heavy-tailed model / weak moment assumption (There are other works study $\epsilon$-contamination model but it is out of the scope of this post), a popular way to construct $g(w;S,\delta)$ is by median-of-means
+In heavy-tailed model / weak moment assumption (There are other works study $\epsilon$-contamination model but it is out of the scope of this post), a popular way to construct $g(w;S,\delta)$ is by geometric median-of-means
 
-```
-for i = 1 ... b do
-mu[i] = 1/B[i] 
-```
+$$
+\hat{\mu} = \arg\min_{\mu} \sum_{i=1}^b \|\mu - \hat{\mu}_i\|_2
+$$
+
+where $\hat{\mu}_i$ is the sample mean in batch $B_i$. Let $\mathbb{P}$ be the probability distribution of $z$ and $\mathbb{P}_w$ be the distribution of the gradient $\nabla F(w;z)$ on $\mathbb{R}^d$ with mean $\mu_w$ and covariance $\Sigma_w$. Minsker, 2015 proved that with probability at least $1-\delta$,
+
+$$
+\|\hat{\mu} - \mu_w\|_2 \leq 11\sqrt{\frac{tr(\Sigma_w)\log(1.4/\delta)}{n}}.
+$$
+
+Note this result requires bounded second moment. By now we see that such truncation has strong theoretical guarantee (The convergence is proved in Prasad et al., 2018). Note that other M-estimators has been proposed with nice concentration and convergence properties, for example, Holland and Ikeda, 2018. Yet solving the geometric median is a not a simple task...
