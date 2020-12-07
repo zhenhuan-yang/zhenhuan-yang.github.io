@@ -24,7 +24,7 @@ $$
 \min_{w \in \mathcal{W}} f(w) = \mathbb{E}_ {z \sim \mathbb{P}}[F(w; z)] = \int_{\mathcal{Z}} F(w; z) \mathrm{d} \mathbb{P}(z).
 $$
 
-where $\mathcal{W}$ is a convex set and we only have access to a sample $S = \{z_1, \cdots, z_n\} $ drawn from the unknown $\mathbb{P}$.
+where $\mathcal{W}$ is a convex set and we only have access to a sample $S = (z_1, \cdots, z_n)$ drawn from the unknown $\mathbb{P}$.
 
 ### Empirical Risk Minimization lacks robustness
 
