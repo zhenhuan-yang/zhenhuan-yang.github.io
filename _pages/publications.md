@@ -13,4 +13,4 @@ author_profile: true
 
 4. **Z. Yang**, B. Zhou, Y. Lei, Y. Ying. *Stochastic Hard Thresholding Algorithms for AUC Maximization*, 20th IEEE International Conference on Data Mining (ICDM 2020), Sorrento, Italy, Nov, 2020.
 
-5. **Z. Yang**, Y. Lei, Y. Ying. *Stability and Differential Privacy of Stochastic Gradient Descent for Pairwise Learning with Non-Smooth Loss*, 24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021), Virtual, Apr, 2021.
+5. **Z. Yang**, Y. Lei, S. Lyu, Y. Ying. *Stability and Differential Privacy of Stochastic Gradient Descent for Pairwise Learning with Non-Smooth Loss*, 24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021), Virtual, Apr, 2021.
