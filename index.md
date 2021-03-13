@@ -7,11 +7,13 @@ header:
   caption: "[Photo credit: Brian Busher](https://www.ualbanyphotos.com/)"
 ---
 
-I am a PhD student in the [Department of Mathematics and Statistics](https://www.albany.edu/math) at [University at Albany, SUNY](https://www.albany.edu/), under the supervision of [Prof. Yiming Ying](https://www.albany.edu/~yy298919/) at [ML@UA Lab](https://sites.google.com/view/mlualbany). My research interests include machine learning and data science. The goal of my research is to address the computational and statistical challenges arising in modern data analysis.
+I am a PhD student in the [Department of Mathematics & Statistics](https://www.albany.edu/math) at [University at Albany, SUNY](https://www.albany.edu/), under the supervision of [Prof. Yiming Ying](https://www.albany.edu/~yy298919/) at [ML@UA Lab](https://sites.google.com/view/mlualbany). My research interests include machine learning and data science. The goal of my research is to address the computational and statistical challenges arising in modern data analysis.
 
 ## News
 
 * (Apr 2021) One paper is accepted by AISTATS 2021
+
+* (Mar 2021) Invited to give a tech talk at Etsy
 
 * (Oct 2020) Invited to serve as a PC member for IJCAI 2021
 
