@@ -13,8 +13,6 @@ I am a PhD student in the [Department of Mathematics & Statistics](https://www.a
 
 * (Apr 2021) One paper is accepted by AISTATS 2021
 
-* (Mar 2021) Invited to give a tech talk at Etsy
-
 * (Oct 2020) Invited to serve as a PC member for IJCAI 2021
 
 * (Oct 2020) Invited to serve as a reviewer for AISTATS 2021
