@@ -4,7 +4,7 @@ title: "Adaptive data analysis and transfer theorem"
 tags: differential-privacy generalization probability
 author-profile: true
 comments: true
-visible: 0
+published: false
 ---
 
 ## Adaptive data analysis
