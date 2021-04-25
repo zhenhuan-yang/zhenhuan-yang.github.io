@@ -13,3 +13,6 @@ I have heard and used concentration inequalities in my life, but I have not hear
 
 Consider vectors $x_i$ satisfying $\sum_{i=1}^n x_i = 0$. Let $\mathcal{B}$ be a uniform random subset of $[n]$ with size $m$, we have
 \[\mathbb{E}\Big\|\frac{1}{m}\sum_{i \in \mathcal{B}} x_i \Big\|_2^2 \leq \frac{\mathbb{I}[|\mathcal{B} < n|]}{mn} \sum_{i=1}^n \|x_i\|_2^2.\]
+
+Wald's Lemma. Let $\{X_i\}_{i=1}^n$ be a sequence of real-valued i.i.d random variables and $n$ be a nonnegative integer-value random variable that is independent of the sequence. Suppose $n$ and $X_i$ have finite expectations, then
+\[\mathbb{E}[\sum_{i=1}^n X_i] = \mathbb{E}[n]\mathbb{X_1}.\]
