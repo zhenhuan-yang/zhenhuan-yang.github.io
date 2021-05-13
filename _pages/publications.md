@@ -15,4 +15,4 @@ author_profile: true
 
 5. **Z. Yang**, Y. Lei, S. Lyu, Y. Ying. *Stability and Differential Privacy of Stochastic Gradient Descent for Pairwise Learning with Non-Smooth Loss*, 24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021), Virtual, Apr, 2021.
 
-6. Y. Lei\*, **Z. Yang\***, Tianbao Yang, Y. Ying.*Stability and Generalization of Stochastic Gradient Methods for Minimax Problems* To appear on ICML 2021 as Long Presentation. (&ast Equal Contribution)
+6. Y. Lei\*, **Z. Yang\***, Tianbao Yang, Y. Ying. *Stability and Generalization of Stochastic Gradient Methods for Minimax Problems*, To appear on ICML 2021 as Long Presentation (166/5513 = 3%). (\* Equal Contribution)
