@@ -16,9 +16,3 @@ I am a PhD student in the [Department of Mathematics & Statistics](https://www.a
 * (May 2021) Start research scientist internship at Etsy
 
 * (Apr 2021) One paper is accepted by AISTATS 2021
-
-* (Oct 2020) Invited to serve as a PC member for IJCAI 2021
-
-* (Oct 2020) Invited to serve as a reviewer for AISTATS 2021
-
-* (Aug 2020) One paper is accepted by ICDM 2020
