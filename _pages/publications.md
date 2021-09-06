@@ -15,6 +15,6 @@ author_profile: true
 
 5. **Zhenhuan Yang**, Yunwen Lei, Siwei Lyu, Yiming Ying. *Stability and Differential Privacy of Stochastic Gradient Descent for Pairwise Learning with Non-Smooth Loss*, 24th International Conference on Artificial Intelligence and Statistics (AISTATS 2021), Virtual, Apr, 2021.
 
-6. Yunwen Lei\*, **Zhenhuan Yang\***, Tianbao Yang, Yiming Ying. *Stability and Generalization of Stochastic Gradient Methods for Minimax Problems*, To appear on ICML 2021 as Long Presentation (166/5513 = 3%). (\* Equal Contribution)
+6. Yunwen Lei\*, **Zhenhuan Yang\***, Tianbao Yang, Yiming Ying. *Stability and Generalization of Stochastic Gradient Methods for Minimax Problems*, To appear on ICML 2021 as Long Presentation (166/5513 = 3.0%). (\* Equal Contribution)
 
 7. Puyu Wang, **Zhenhuan Yang**, Yunwen Lei, Yiming Ying, Hai Zhang. *Differentially Private Empirical Risk Minimization for AUC Maximization*, Neurocomputing, 2021.
