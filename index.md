@@ -11,7 +11,7 @@ I am a PhD student in the [Department of Mathematics & Statistics](https://www.a
 
 ## News
 
-* (Sep 2021) Serve as a PC member for AAAI 2022
+* (Sep 2021) Serve as a PC for AAAI 2022
 
 * (May 2021) One paper is accepted by ICML 2021 as long presentation (166/5513 = 3%)
 
