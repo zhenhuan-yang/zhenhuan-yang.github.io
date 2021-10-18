@@ -11,6 +11,8 @@ I am a PhD student in the [Department of Mathematics & Statistics](https://www.a
 
 ## News
 
+* (Oct 2021) Servce as Reviewer for AISTATS 2022
+
 * (Sep 2021) One paper is accepted by NeurIPS 2021
 
 * (Sep 2021) Serve as a PC member for AAAI 2022
