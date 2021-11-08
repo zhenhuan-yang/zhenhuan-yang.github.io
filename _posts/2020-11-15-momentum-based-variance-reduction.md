@@ -4,6 +4,7 @@ title: "Momentum-Based Variance Reduction"
 tags: sgd optimization
 author-profile: true
 comments: true
+published: false
 ---
 
 ## Explanation of the idea

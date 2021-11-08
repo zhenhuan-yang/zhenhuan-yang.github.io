@@ -4,6 +4,7 @@ title: "Algorithmic stability of SGD"
 tags: sgd generalization probability
 author-profile: true
 comments: true
+published: false
 ---
 
 ## The original idea
