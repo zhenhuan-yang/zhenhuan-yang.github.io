@@ -5,7 +5,7 @@ title: "Publications"
 author_profile: true
 ---
 
-**Zhenhuan Yang\***, Yunwen Lei\*, Tianbao Yang, Yiming Ying. [*Simple Stochastic and Online Gradient Descent Algorithms for Pairwise Learning*](https://openreview.net/forum?id=paxcakYWwIu), NeurIPS 2021. (* Equal Contribution)
+**Zhenhuan Yang\***, Yunwen Lei\*, Tianbao Yang, Yiming Ying. [*Simple Stochastic and Online Gradient Descent Algorithms for Pairwise Learning*](https://openreview.net/forum?id=paxcakYWwIu), Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021), Virtual, December, 2021. (* Equal Contribution)
 
 Puyu Wang, **Zhenhuan Yang**, Yunwen Lei, Yiming Ying, Hai Zhang. [*Differentially Private Empirical Risk Minimization for AUC Maximization*](https://www.sciencedirect.com/science/article/abs/pii/S0925231221010353), Neurocomputing, 2021.
 
