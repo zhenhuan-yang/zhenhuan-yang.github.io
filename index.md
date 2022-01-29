@@ -11,7 +11,7 @@ I am a PhD student in the [Department of Mathematics & Statistics](https://www.a
 
 ## News
 
-* (Jan 2021) Serve as Reviewer for ICML 2022
+* (Jan 2022) Serve as Reviewer for ICML 2022
 
 * (Oct 2021) Serve as Reviewer for AISTATS 2022
 
