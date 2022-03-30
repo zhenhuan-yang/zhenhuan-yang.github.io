@@ -11,6 +11,8 @@ I am a PhD candidate in the [Department of Mathematics & Statistics](https://www
 
 ## News
 
+* (May 2022) Serve as Reviewer for NeurIPS 2022
+
 * (Jan 2022) Serve as Reviewer for ICML 2022
 
 * (Oct 2021) Serve as Reviewer for AISTATS 2022
