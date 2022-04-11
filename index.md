@@ -7,7 +7,7 @@ header:
   caption: "[Photo credit: Brian Busher](https://www.ualbanyphotos.com/)"
 ---
 
-I am a PhD candidate in the [Department of Mathematics & Statistics](https://www.albany.edu/math) at [University at Albany, SUNY](https://www.albany.edu/), under the supervision of [Prof. Yiming Ying](https://www.albany.edu/~yy298919/) at [ML@UA Lab](https://sites.google.com/view/mlualbany). My research interests include optimization algorithms, statistical learning theory and mathematical modeling in general.
+I am a PhD candidate in the [Department of Mathematics & Statistics](https://www.albany.edu/math) at [University at Albany, SUNY](https://www.albany.edu/), under the supervision of [Prof. Yiming Ying](https://www.albany.edu/~yy298919/) at [ML@UA Lab](https://sites.google.com/view/mlualbany). My research interests span broadly in optimization and statistics informed machine learning problems.
 
 ## News
 
