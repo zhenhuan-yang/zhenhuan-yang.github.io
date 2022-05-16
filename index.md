@@ -11,6 +11,8 @@ I am a PhD candidate in the [Department of Mathematics & Statistics](https://www
 
 ## News
 
+* (May 2022) One paper is accepted by UAI 2022
+
 * (May 2022) Serve as Reviewer for NeurIPS 2022
 
 * (Jan 2022) Serve as Reviewer for ICML 2022
@@ -25,4 +27,3 @@ I am a PhD candidate in the [Department of Mathematics & Statistics](https://www
 
 * (May 2021) Start research scientist internship at Etsy
 
-* (Apr 2021) One paper is accepted by AISTATS 2021
