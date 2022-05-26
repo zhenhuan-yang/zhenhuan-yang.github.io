@@ -13,4 +13,4 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/VIX), The VIX is a 30-day
 $$
 VIX = \sqrt{\frac{2\exp(r\tau)}{\tau} \Big(\int_0^F\frac{P(K)}{K^2}\mathrm{d}K + \int_F^\infty\frac{C(K)}{K^2}\mathrm{d}K\Big)}
 $$
-where $\tau$ is the number of average days in a month (30 days), $r$ is  the risk-free rate, $F$ is the 30-day forward price on the S&P 500, and {\displaystyle P(K)}{\displaystyle P(K)} and {\displaystyle C(K)}C(K) are prices for puts and calls with strike {\displaystyle K}K and 30 days to maturity
+where $\tau$ is the number of average days in a month (30 days), $r$ is  the risk-free rate, $F$ is the 30-day forward price on the S&P 500, and $P(K)$ and $C(K)$ are prices for puts and calls with strike $K$ and 30 days to maturity
