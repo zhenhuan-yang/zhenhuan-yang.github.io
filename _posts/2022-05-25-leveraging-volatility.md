@@ -4,7 +4,7 @@ title: "Leveraging Volatility in Trading"
 tags: finance
 author-profile: true
 comments: true
-published: trues
+published: true
 ---
 
 VIX is a volatility index that measures the volatility of S&P500 Index returns [implied](https://www.investopedia.com/terms/i/iv.asp#toc-what-is-implied-volatility-iv) in the next 30 days and priced (implied) in S&P500 options. The VIX gauges the level of fear or stress in the stock market and hence enjoys an vivid nickname as the “Fear Index.”
