@@ -5,6 +5,8 @@ title: "Publications"
 author_profile: true
 ---
 
+## Selected
+
 **Zhenhuan Yang**, Shu Hu, Yunwen Lei, Kush R. Varshney, Siwei Lyu, Yiming Ying [*Differentially Private SGDA for Minimax Problems*](https://arxiv.org/abs/2201.09046?context=cs.CR), arxiv preprint.
 
 **Zhenhuan Yang\***, Yunwen Lei\*, Tianbao Yang, Yiming Ying. [*Simple Stochastic and Online Gradient Descent Algorithms for Pairwise Learning*](https://openreview.net/forum?id=paxcakYWwIu), Thirty-fifth Conference on Neural Information Processing Systems (NeurIPS 2021), Virtual, December, 2021. (* Equal Contribution)
