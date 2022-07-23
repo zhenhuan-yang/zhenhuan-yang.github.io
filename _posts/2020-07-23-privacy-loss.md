@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "How to understand the $\epsilon$ value in differntial Privacy"
+title: "How to understand the \\epsilon value in differntial Privacy"
 tags: probability differential-privacy
 author-profile: true
 comments: true
