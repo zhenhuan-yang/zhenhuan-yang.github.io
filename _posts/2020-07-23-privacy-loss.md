@@ -19,34 +19,34 @@ $$
 
  $$\mathbb{P}[S = S_{\text{yes}}] = 1 - \mathbb{P}[S = S_{\text{no}}].$$
 
-Now the $\epsilon$-DP algorithm $A$ returns an output $O$, we have to compare $\mathbb{P}[S = S_{\text{yes}}]$ with the posterior $\mathbb{P}[S = S_{\text{yes}}|A(S) = O]$. By the Bayes' rule, we know
+Now the $\epsilon$-DP algorithm $A$ returns an output $O$, we have to compare $\mathbb{P}[S = S_{\text{yes}}]$ with the posterior $\mathbb{P}[S = S_{\text{yes}}|A(S) \in O]$. By the Bayes' rule, we know
 
 $$
-\mathbb{P}[S = S_{\text{yes}}|A(S) = O] = \frac{\mathbb{P}[S = S_{\text{yes}}] \cdot \mathbb{P}[A(S) = O|S = S_{\text{yes}}]}{\mathbb{P}[A(S) = O]}.
+\mathbb{P}[S = S_{\text{yes}}|A(S) \in O] = \frac{\mathbb{P}[S = S_{\text{yes}}] \cdot \mathbb{P}[A(S) \in O|S = S_{\text{yes}}]}{\mathbb{P}[A(S) \in O]}.
 $$
 
 By the definition of conditional probability, we know
 
 $$
-\frac{\mathbb{P}[S = S_{\text{yes}}|A(S) = O]}{\mathbb{P}[S = S_{\text{no}}|A(S) = O]} = \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]} \cdot \frac{\mathbb{P}[A(S_{\text{yes}}) = O]}{\mathbb{P}[A(S_{\text{no}}) = O]}.
+\frac{\mathbb{P}[S = S_{\text{yes}}|A(S) \in O]}{\mathbb{P}[S = S_{\text{no}}|A(S) \in O]} = \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]} \cdot \frac{\mathbb{P}[A(S_{\text{yes}}) \in O]}{\mathbb{P}[A(S_{\text{no}}) \in O]}.
 $$
 
 Now by the DP constraint, we know 
 
 $$
-e^{-\epsilon}\leq \frac{\mathbb{P}[A(S_{\text{yes}}) = O]}{\mathbb{P}[A(S_{\text{no}}) = O]} \leq e^\epsilon.
+e^{-\epsilon}\leq \frac{\mathbb{P}[A(S_{\text{yes}}) \in O]}{\mathbb{P}[A(S_{\text{no}}) \in O]} \leq e^\epsilon.
 $$
 
 Plugging it into the formula above, we know
 
 $$
-e^{-\epsilon} \cdot \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]} \leq \frac{\mathbb{P}[S = S_{\text{yes}}|A(S) = O]}{\mathbb{P}[S = S_{\text{no}}|A(S) = O]} \leq e^\epsilon \cdot \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]}.
+e^{-\epsilon} \cdot \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]} \leq \frac{\mathbb{P}[S = S_{\text{yes}}|A(S) \in O]}{\mathbb{P}[S = S_{\text{no}}|A(S) \in O]} \leq e^\epsilon \cdot \frac{\mathbb{P}[S = S_{\text{yes}}]}{\mathbb{P}[S = S_{\text{no}}]}.
 $$
 
-Or
+Solving for $\mathbb{P}[S = S_{\text{yes}}|A(S) \in O]$, we know
 
 $$
-\frac{\mathbb{P}[S = S_{\text{yes}}]}{e^\epsilon + (1 - e^\epsilon)\cdot \mathbb{P}[S = S_{\text{yes}}]} \leq \mathbb{P}[S = S_{\text{yes}}|A(S) = O] \leq \frac{e^\epsilon \cdot \mathbb{P}[S = S_{\text{yes}}]}{1 + (e^\epsilon - 1) \cdot \mathbb{P}[S = S_{\text{no}}]}.
+\frac{\mathbb{P}[S = S_{\text{yes}}]}{e^\epsilon + (1 - e^\epsilon)\cdot \mathbb{P}[S = S_{\text{yes}}]} \leq \mathbb{P}[S = S_{\text{yes}}|A(S) \in O] \leq \frac{e^\epsilon \cdot \mathbb{P}[S = S_{\text{yes}}]}{1 + (e^\epsilon - 1) \cdot \mathbb{P}[S = S_{\text{no}}]}.
 $$
 
 For example, if the prior is $50\%$ and $\epsilon = 1.1$, then the posterior is between $25\%$ to $75\%$.
