@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "zhenhuan-yang.github.io"
 title_separator          : "-"
 subtitle                 : "杨震环的个人主页" # site tagline that appears below site title in masthead
-name                     : "Zhenhuan Yang"
+name                     : "Dr. Zhenhuan Yang"
 description              : "Personal academic website"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -93,10 +93,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Zhenhuan Yang"
+  name             : "Dr. Zhenhuan Yang"
   avatar           : "/assets/images/selfie.jpg"
-  bio              : "PhD candidate interested in machine learning"
-  location         : "Albany, NY, USA"
+  bio              : "Applied Scientist interested in machine learning"
+  location         : "New York, NY, USA"
   email            : # zyang6@albany.edu
   links:
     - label: "Email"
