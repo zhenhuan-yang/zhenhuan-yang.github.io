@@ -13,7 +13,7 @@ I am an applied scientist at [Etsy](https://www.dsml.etsy.com/). I finish my Ph.
 
 * (Nov 2022) Serve as Reviewer for CVPR 2023
 
-* (Oct 2022) Serve as Reviewer for ICLR 2023
+* (Oct 2022) Serve as Reviewer for ICLR 2023 and AISTATS 2023
 
 * (Aug 2022) Graduate from SUNY and start at Etsy
 
