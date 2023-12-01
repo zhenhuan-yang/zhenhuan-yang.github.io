@@ -16,3 +16,5 @@ I am an applied scientist at [Etsy](https://www.dsml.etsy.com/). I finish my Ph.
 * (Oct 2023) Invited to serve as a reviewer for CVPR 2024
 
 * (July 2023) One paper is accepted by WWW 2023
+
+* (Mar 2023) One paper is accepted by AAAI 2023
