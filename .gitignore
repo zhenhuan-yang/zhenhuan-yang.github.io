@@ -30,3 +30,6 @@ _site
 
 # Claude Code
 .claude/
+
+# Local Overleaf clones (contain access tokens)
+overleaf/
